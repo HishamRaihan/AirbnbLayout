@@ -1,0 +1,66 @@
+/* color variables that can be referenced too later */
+/* css variables useful for colors */
+/* root pseudo selector */
+:root {
+	/* put variables in here */
+	/* all variables start with -- */
+	--dark-gray: #45484d;
+	--light-gray: #e9ebe7;
+	--bright-white: #ffffff;
+}
+
+body {
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+}
+
+/* this class will use flexbox to center anything that it is applied too */
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-container {
+	position: relative;
+	padding: 3rem;
+}
+
+/* you cant shrink an image from the div its in */
+/* you have to target the image itself */
+.img-container > img {
+	width: 30rem;
+	height: 30rem;
+}
+
+.img-container > h3 {
+  font-size: 2rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--bright-white);
+}
+
+.large-button {
+	padding: 1rem 3rem;
+	background-color: var(--bright-white);
+	border: 0.1rem solid var(--dark-gray);
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+/* .wf-black {
+	border: 0.3rem solid black;
+}
+.wf-green {
+	border: 0.3rem solid green;
+}
+.wf-yellow {
+	border: 0.3rem solid yellow;
+}
+.wf-blue {
+	border: 0.3rem solid blue;
+} */

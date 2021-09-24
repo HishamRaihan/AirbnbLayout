@@ -1,0 +1,61 @@
+.container {
+	border: 5px solid #ffcc5c;
+	/* line up elements from left to right */
+	/* default direction is horizontal */
+	display: flex;
+	/* controls content along the main axis */
+	/* flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: flex-end; */
+	/* flex-wrap: wrap; */
+}
+/* want to space home and search together and move logout to right */
+/* .logout{
+  margin-left: auto;
+} */
+/* .home{
+  margin-right: auto;
+} */
+/* if we want the items to grow and shrink */
+/* .container > div{
+  short hand for flex-grow, flex-shrink, flex-basis */
+/* flex does the math for you and does the work for you
+  flex: 1;
+} */
+/* prioritizes the */
+/* .container > .search{
+  flex: 2;
+} */
+/* .home{
+  flex: 1;
+}
+.logout{
+  flex: 1;
+} */
+
+/* control content along the cross axis (top-bottom) */
+/* .logout{
+  align-self: flex-start;
+}
+.home{
+  align-self: flex-end;
+} */
+/* .home {
+	flex: 1 1 200px;
+}
+
+.logout {
+	flex-grow: 10;
+	flex-shrink: 1;
+	flex-basis: 200px;
+} */
+.home{
+  order: 1;
+}
+.search{
+  order: 0;
+}
+.logout{
+  order: -1;
+}
