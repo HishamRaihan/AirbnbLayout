@@ -1,0 +1,90 @@
+body{
+  background-color: #edefec;
+}
+h2{
+  margin: 0%;
+}
+p{
+  margin: 5px;
+}
+.top-row , .bottom-row{
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top-row  div, .bottom-row  div{
+  /* border: 1px solid black; */
+  height: 300px;
+  width:calc((100% / 3) - 100px) ;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2em;
+   font-weight: 800;
+   font-family: 'Times New Roman', Times, serif;
+   margin-top: 1em;
+   margin-bottom: 1em;
+  
+}
+
+
+.sf1{
+  background-image: url(../img/san-francisco.jpg);
+}
+.ny{
+  background-image: url(../img/new-york.jpg);
+}
+.london{
+  background-image: url(../img/london.jpg);
+}
+.napa{
+  background-image: url(../img/napa.jpg);
+}
+.sonoma{
+  background-image: url(../img/sonoma.jpg);
+}
+.sf2{
+  background-image: url(../img/san-francisco-2.jpg);
+}
+
+
+
+
+
+.headers{
+  margin: 0px;
+  text-align: center;
+  font-family:sans-serif ;
+  color: #585b5e;
+}
+.guideBook-button{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+
+.guideBook-button  .button{
+  background-color: white;
+  color: #585b5e;
+  height: 40px;
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 650px){
+  .top-row , .bottom-row {
+  display: flex;
+  flex-direction: column;
+}
+.top-row div, .bottom-row div {
+  width: 100%;
+  
+}
+}
